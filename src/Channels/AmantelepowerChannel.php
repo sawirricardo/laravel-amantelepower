@@ -5,7 +5,8 @@ namespace Sawirricardo\LaravelAmantelepower\Channels;
 use Illuminate\Notifications\Notification;
 use Sawirricardo\LaravelAmantelepower\Facades\LaravelAmantelepower;
 
-class AmantelepowerChannel {
+class AmantelepowerChannel
+{
     /**
      * Send the given notification.
      *

@@ -4,7 +4,6 @@ namespace Sawirricardo\LaravelAmantelepower;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Sawirricardo\LaravelAmantelepower\Commands\LaravelAmantelepowerCommand;
 
 class LaravelAmantelepowerServiceProvider extends PackageServiceProvider
 {

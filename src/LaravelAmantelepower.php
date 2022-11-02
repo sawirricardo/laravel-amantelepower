@@ -18,11 +18,11 @@ class LaravelAmantelepower
     {
         return $this->buildRequest()
             ->post('SendSMS', [
-                "Message" => $message,
-                "MobileNumbers" => $phone,
-                "SenderId" => $this->config['amantelepower.sender_id'],
-                "ApiKey" => $this->config['amantelepower.api_key'],
-                "ClientId" => $this->config['amantelepower.client_id'],
+                'Message' => $message,
+                'MobileNumbers' => $phone,
+                'SenderId' => $this->config['amantelepower.sender_id'],
+                'ApiKey' => $this->config['amantelepower.api_key'],
+                'ClientId' => $this->config['amantelepower.client_id'],
             ]);
     }
 
