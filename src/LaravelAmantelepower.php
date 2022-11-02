@@ -20,9 +20,9 @@ class LaravelAmantelepower
             ->post('SendSMS', [
                 'Message' => $message,
                 'MobileNumbers' => $phone,
-                'SenderId' => $this->config['amantelepower.sender_id'],
-                'ApiKey' => $this->config['amantelepower.api_key'],
-                'ClientId' => $this->config['amantelepower.client_id'],
+                'SenderId' => $this->config['sender_id'],
+                'ApiKey' => $this->config['api_key'],
+                'ClientId' => $this->config['client_id'],
             ]);
     }
 
