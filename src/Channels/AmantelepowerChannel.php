@@ -18,6 +18,8 @@ class AmantelepowerChannel
     {
         $message = $notification->toAmantelepower($notifiable);
 
-        LaravelAmantelepower::sendSms($notifiable->phone_number, $message);
+        $to = $notifiable->amantelepower_phone_number ?? $notifiable->phone_number;
+
+        LaravelAmantelepower::sendSms($to, $message);
     }
 }
